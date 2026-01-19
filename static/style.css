@@ -1,0 +1,125 @@
+/* Conversational BI App Custom Styles */
+
+body {
+    background-color: #181c20;
+    color: #f5f6fa;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+/* Chat message bubbles */
+
+.stChatMessage {
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #23272f;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: #f5f6fa !important;
+    opacity: 1 !important;
+}
+
+
+.stChatMessage.user {
+    background: linear-gradient(90deg, #3b82f6 0%, #1e293b 100%);
+    color: #f5f6fa !important;
+    align-self: flex-end;
+}
+
+
+.stChatMessage.assistant {
+    background: linear-gradient(90deg, #23272f 0%, #353945 100%);
+    color: #f5f6fa !important;
+    align-self: flex-start;
+}
+
+.stChatMessage .stMarkdownContainer {
+    display: flex;
+    align-items: center;
+}
+
+.stChatMessage .stMarkdownContainer img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+
+.stCodeBlock pre, .stCodeBlock code, pre, code {
+    background: #181c20 !important;
+    color: #f8f8f2 !important;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+
+.stDataFrame, .stDataFrame table, .stDataFrame th, .stDataFrame td {
+    background: #23272f !important;
+    color: #f5f6fa !important;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.stPlotlyChart {
+    background: #23272f;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+
+.stTextInput > div > input, .stTextArea > div > textarea {
+    background: #23272f;
+    color: #f5f6fa;
+    border-radius: 8px;
+    border: 1px solid #444a54;
+}
+
+
+.stButton > button {
+    background: #3b82f6;
+    color: #f5f6fa;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.stButton > button:hover {
+    background: #1e293b;
+}
+
+
+.stSidebar {
+    background: #23272f;
+    color: #f5f6fa;
+}
+
+
+.stApp header {
+    background: #23272f;
+    color: #3b82f6;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 16px 0;
+    border-bottom: 1px solid #3b82f6;
+}
+
+footer {display: none;}
+
+.stChatMessage, .stChatMessage * {
+    text-shadow: none !important;
+}
+
+@media (max-width: 600px) {
+    .stChatMessage {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .stApp header {
+        font-size: 1.3rem;
+        padding: 10px 0;
+        align-items: center;
+    }
+}

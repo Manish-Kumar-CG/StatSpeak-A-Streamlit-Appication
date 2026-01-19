@@ -1,0 +1,14 @@
+streamlit
+tabulate
+langchain
+langchain_community
+opensearch-py
+sqlparse
+google.generativeai
+python-dotenv
+google-cloud-aiplatform
+langchain_google_vertexai
+pandas_gbq
+db-dtypes
+plotly
+seaborn
